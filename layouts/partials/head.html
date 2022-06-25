@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- start ogp -->
-    <meta property="og:site_name" content="{{ .Site.Title }}">
-    <meta property="og:type" content="article">
+<!--    <meta property="og:site_name" content="{{ .Site.Title }}">-->
+<!--    <meta property="og:type" content="article">-->
 
     {{ if .Params.thumbnail }}
     <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.thumbnail }}">
@@ -26,13 +26,13 @@
     {{ end }}
 
     {{ if .Params.description }}
-    <meta name="description" content="{{ .Params.description }}">
-    <meta property="og:description" content="{{ .Params.description }}" />
-    <meta property="twitter:description" content="{{ .Params.description }}" />
+<!--    <meta name="description" content="{{ .Params.description }}">-->
+<!--    <meta property="og:description" content="{{ .Params.description }}" />-->
+<!--    <meta property="twitter:description" content="{{ .Params.description }}" />-->
     {{ else }}
-    <meta name="description" content="{{ .Site.Params.description }}">
-    <meta property="og:description" content="{{ .Site.Params.description }}" />
-    <meta property="twitter:description" content="{{ .Site.Params.description }}" />
+<!--    <meta name="description" content="{{ .Site.Params.description }}">-->
+<!--    <meta property="og:description" content="{{ .Site.Params.description }}" />-->
+<!--    <meta property="twitter:description" content="{{ .Site.Params.description }}" />-->
     {{ end }}
 
     {{ if .Params.summary }}
@@ -42,7 +42,7 @@
     {{ end }}
     <!-- end ogp -->
 
-    <meta name="keyword"  content="{{ .Site.Params.keyword }}">
+<!--    <meta name="keyword"  content="{{ .Site.Params.keyword }}">-->
     <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}">
 
     <title>{{ if .Title }}{{ .Title }} | {{ .Site.Params.SEOTitle }}{{ else }}{{ .Site.Params.SEOTitle }}{{ end }}</title>
@@ -52,7 +52,7 @@
     {{ if .Site.Params.disqus_proxy }}
     <link rel="stylesheet" href="{{ "css/iDisqus.min.css" | relURL }}"/>
     {{ end }}
-    
+
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
 
